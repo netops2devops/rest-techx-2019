@@ -8,4 +8,7 @@ data = json.loads(response.text)
 formatted_data = json.dumps(data, indent=4, sort_keys=True) 
 
 #Formatted output
-print(data['asn']['endAsNumber']['$'] + " =>\t" + data['asn']['orgRef']['@name'])
+asnum = data['asn']['endAsNumber']['$']
+asname = data['asn']['orgRef']['@name']
+
+print("{0} => {1}".format(asnum, asname))
