@@ -8,8 +8,11 @@ def GetASName(asn):
     response = requests.get("https://whois.arin.net/rest/asn/AS{0}.json".format(asn))
     data = json.loads(response.text)
 
+    asnum = data['asn']['endAsNumber']['$']
+    asname = data['asn']['orgRef']['@name']
+    
     #Formatted output
-    print(data['asn']['endAsNumber']['$'] + " =>\t" + data['asn']['orgRef']['@name'])
+    print("{0} => {1}".format(asnum, asname))
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:

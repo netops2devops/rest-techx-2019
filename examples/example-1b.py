@@ -10,5 +10,5 @@ response = requests.get("https://whois.arin.net/rest/asn/AS1224.json")
 # RESPONSE OUTPUT
 print("-- JSON based output --\n")
 print(response.text)
-print()
+print("")
 print("Ew! WHAT A MESS!")
