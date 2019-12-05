@@ -37,4 +37,4 @@ if __name__ == '__main__':
         asn_list = sys.argv[1:]
         
         # Function call 
-        GetASName((asn_list))
+        GetASName(asn_list)
