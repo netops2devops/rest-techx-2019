@@ -2,12 +2,11 @@
 
 import requests
 import json
-from pprint import pprint
 
 # Request server to send JSON formatted output
 response = requests.get("https://whois.arin.net/rest/asn/AS1224.json")
 
-# LOAD response output as JSON | Serialize to give make it look more readable
+# LOAD response output as JSON | Let's make it look more readable
 data = json.loads(response.text)
 json_data = json.dumps(data, indent=4, sort_keys=True)
 

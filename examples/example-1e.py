@@ -21,5 +21,3 @@ if __name__ == '__main__':
 
     else:
         GetASName(sys.argv[1])
-
-
