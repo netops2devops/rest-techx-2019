@@ -1,4 +1,4 @@
-# rest-techx-2019
+# REST API Tutorial - Internet2 Technology Exchange 2019
 
 1. Python IDE used in this tutorial :
 https://repl.it/languages/python3
