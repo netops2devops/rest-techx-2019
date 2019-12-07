@@ -1,4 +1,5 @@
-# Objective : Modify example-1e.py to store mapping of any given ASN <=> AS-NAME in a Python dictionary 
+# OBJECTIVE : Modify example-1e.py to take arbitrary number of ASN's as input
+#             Store the ASN <=> AS-NAME mapping in a Python dictionary for further use 
 
 # Your input should look something like this
 
